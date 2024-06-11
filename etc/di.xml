@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+* SetuBridge Technolabs
+* http://www.setubridge.com/
+* @author SetuBridge
+* @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="MagePal\CustomShippingRate\Model\Carrier" type="SetuBridge\ShippingMethodValidation\Model\Carrier" />
+    <preference for="MagePal\CustomShippingRate\Helper\Data" type="SetuBridge\ShippingMethodValidation\Helper\Data" />
+    <preference for="MagePal\CustomShippingRate\Block\Adminhtml\System\Config\Form\Field\ShippingList" type="SetuBridge\ShippingMethodValidation\Block\Adminhtml\SetChanges" />
+    <preference for="MagePal\CustomShippingRate\Block\Adminhtml\Order\Create\Shipping\Method\Form" type="SetuBridge\ShippingMethodValidation\Block\Adminhtml\Order\Create\Shipping\Method\Form"/>
+</config>
